@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'portfolio'
+    selector: 'app'
 })
 export class AppComponent implements OnInit {
 

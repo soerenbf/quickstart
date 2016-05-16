@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin group {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+}
+
+@mixin center--vertically {
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+@mixin center--horizontally {
+    left: 50%;
+    @include transform(translateX(-50%));
+}
+
+@mixin breakpoint--sm {
+    @media (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin breakpoint--md {
+    @media (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin breakpoint--lg {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
