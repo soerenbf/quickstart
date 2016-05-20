@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "description": "portfolio packages",
+  "main": "",
+  "authors": [
+    "Søren Bruus Frank <soerenbf@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "http://sorenbf.dk",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.1.1",
+    "jquery": "^2.2.3"
+  }
+}
