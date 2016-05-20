@@ -16,6 +16,14 @@
     transform: $transform;
 }
 
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
 @mixin center--vertically {
     top: 50%;
     @include transform(translateY(-50%));

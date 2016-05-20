@@ -1,1 +1,5 @@
-@import "scss-partials/grid";
+@import "scss/lib/grid";
+@import "scss/config/variables";
+@import "scss/lib/mixins";
+
+@import "scss/shared/base";
